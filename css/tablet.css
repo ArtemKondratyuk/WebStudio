@@ -157,7 +157,8 @@
 
 .section-text {
   display: flex;
-  flex-direction: none;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -229,6 +230,7 @@
 .our-team {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 24px;
 } 
 
@@ -727,4 +729,3 @@ footer {
 
 
 
-}
