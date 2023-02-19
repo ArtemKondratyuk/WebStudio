@@ -13,29 +13,35 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
     <title>Web Studio</title>
   </head>
   <body>
     <header>
       <div class="container">         
-          <a href="./index.html" class="web">WEB<span class="studio">STUDIO</span></a>
-                   <ul class="navigation">
-            <li>
+          <a href="" class="web">WEB<span class="studio">STUDIO</span></a>
+          <nav class="navigation-menu">
+            <ul class="navigation ">
+            <li class="nav-menu">
               <a href="./index.html" class="link-menu active">Studio</a>
             </li>
-            <li>
+            <li class="nav-menu">
               <a href="./portfolio.html" class="link-menu">Portfolio</a>
             </li>
-            <li><a href="" class="link-menu">Contacts</a></li>
+            <li class="nav-menu">
+              <a href="" class="link-menu">Contacts</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contacts">
-          <li>
+        <ul class="contacts adress">
+          <li class="mail">
             <a href="mail:info@devstudio.com" class="link-mail"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="tel">
             <a href="tel:+11(000)111-11-11" class="link-tel"
               >+11(000)111-11-11</a
             >
@@ -354,7 +360,7 @@
     </main>
     <footer class="footer">
       <div class="container flex-footer">
-        <div>
+        <div class="footer-logo-text">
           <a href="" class="footer-web"
             >WEB<span class="footer-studio">STUDIO</span></a
           >
@@ -397,7 +403,7 @@
           </ul>
         </div>
       <div class="footer-form-fild"> 
-        <p class="footer-form">Subscribe</p>       
+        <p class="footer-subscribe">Subscribe</p>       
         <form class="footer-form">
          <label> 
            <input type="email" name="email" id="email" placeholder="Email" />
@@ -460,8 +466,6 @@
         </form>      
       </div>
     </div>
-    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
-    <script defer src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+       <script src="./js/modal.js"></script>
   </body>
 </html>
