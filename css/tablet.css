@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
     .container {
-      max-width: 768px;
+      max-width: 720px;
       margin-left: 16px;
       margin-right: 16px;
     }
@@ -162,8 +162,12 @@
   gap: 24px;
 }
 
+.section-text-li {
+  width: calc((100% - 24px)/2);
+}
+
 .section {
-  padding: 120px 0;
+  padding-top: 96px;
 }
 
 .anten-background,
@@ -188,6 +192,7 @@
   line-height: 1.1;
   color: var(--text-color);
   letter-spacing: 0.02em;
+  text-align: left;
   margin: 0;
   margin-bottom: 8px;
 }
@@ -203,21 +208,18 @@
 /* section-what */
 
 .section-what {
-  padding-bottom: 120px;
+  display: none;
 }
 
 .title-what {
-  font-size: 36px;
-  line-height: 1.11;
-  color: var(--text-color);
-  letter-spacing: 0.02em;
-  text-align: center;
+ display: none;
 }  
 
 /* team */
 
 .background-team {
   background: var(--logo-studio-footer);
+  padding-top: 0;
 }
 
 .title-team {
@@ -313,14 +315,18 @@
   height: 16px;
 }
 
-customers
+/* customers */
+
+.title-team {
+  padding-top: 0;
+}
 
 .customers {
   display: flex;
-  justify-self: center;
-  flex-direction: row;
+   flex-direction: row;
+   justify-content: center;
   gap: 24px;
-}
+  }
 
 .customers-background {
   background-color: var(--body-bg-color);
@@ -422,119 +428,6 @@ customers
   fill: var(--primary-brand);
 } 
 
-/* page portfolio */
-
-/*.section-portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  margin: 0 auto;
-  margin-bottom: 72px;
-  justify-content: center;
-}
-
-.btn {
-  background: var(--logo-studio-footer);
-  border: 1px solid var(--footer-text-color);
-  border-radius: 4px;
-  transition: background-color 250ms var(--cubic-bezier),
-    fill 250ms var(--cubic-bezier);
-}
-
-.btn-text {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--primary-brand);
-  letter-spacing: 0.04em;
-  padding: 12px 24px;
-}
-
-.btn:hover {
-  background: var(--primary-brand);
-  box-shadow: 0px 3px 1px var(--btn-hover-color), 0px 2px 1px var(--shadow),
-    0px 2px 2px var(--btn-hover);
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--body-bg-color);
-  border: 1px solid transparent;
-}
-
-.content-menu {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
-}
-
-.content-portfolio {
-  width: 360px;
-  background: var(--body-bg-color);
-  box-shadow: 0px 1px 6px var(--personal-color);
-}
-
-.content-portfolio:hover {
-  box-shadow: 0px 1px 6px var(--personal-color), 0px 1px 1px var(--personal),
-    0px 2px 1px var(--personal-color);
-  border-radius: 0px 0px 4px 4px;
-  transition: background-color 250ms var(--cubic-bezier),
-    fill 250ms var(--cubic-bezier);
-}
-
-.blue-overley {
-  width: 100%;
-  height: 100%;
-  background-color: var(--primary-brand);
-  color: var(--logo-studio-footer);
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100%);
-  opacity: 100%;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 2%;
-  padding: 40px 32px 164px;
-}
-
-.text-cards {
-  position: relative;
-  overflow: hidden;
-}
-
-.cards-link:hover .blue-overley,
-.cards-link:focus .blue-overley {
-  transform: translateY(0%);
-  opacity: 1;
-}
-
-.content-border {
-  border-left: 0.5px solid var(--logo-studio-footer);
-  border-bottom: 0.5px solid var(--logo-studio-footer);
-  border-right: 0.5px solid var(--logo-studio-footer);
-  border-top: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-}
-
-.project-card {
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--body-text-color);
-  letter-spacing: 0.02em;
-  margin: 0px;
-}
-
 /* footer */
 
 footer {
@@ -548,12 +441,7 @@ footer {
 }
 
 .flex-footer {
-  display: flex;
-}
-
-.foter-menu {
-  display: flex;
-  gap: 120px;
+  
 }
 
 .footer-web {
@@ -721,6 +609,118 @@ footer {
 	margin-left: 16px;
  }   
 
+/* page portfolio */
+
+/*.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+.btn {
+  background: var(--logo-studio-footer);
+  border: 1px solid var(--footer-text-color);
+  border-radius: 4px;
+  transition: background-color 250ms var(--cubic-bezier),
+    fill 250ms var(--cubic-bezier);
+}
+
+.btn-text {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-brand);
+  letter-spacing: 0.04em;
+  padding: 12px 24px;
+}
+
+.btn:hover {
+  background: var(--primary-brand);
+  box-shadow: 0px 3px 1px var(--btn-hover-color), 0px 2px 1px var(--shadow),
+    0px 2px 2px var(--btn-hover);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--body-bg-color);
+  border: 1px solid transparent;
+}
+
+.content-menu {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.content-portfolio {
+  width: 360px;
+  background: var(--body-bg-color);
+  box-shadow: 0px 1px 6px var(--personal-color);
+}
+
+.content-portfolio:hover {
+  box-shadow: 0px 1px 6px var(--personal-color), 0px 1px 1px var(--personal),
+    0px 2px 1px var(--personal-color);
+  border-radius: 0px 0px 4px 4px;
+  transition: background-color 250ms var(--cubic-bezier),
+    fill 250ms var(--cubic-bezier);
+}
+
+.blue-overley {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand);
+  color: var(--logo-studio-footer);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+  opacity: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  padding: 40px 32px 164px;
+}
+
+.text-cards {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards-link:hover .blue-overley,
+.cards-link:focus .blue-overley {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.content-border {
+  border-left: 0.5px solid var(--logo-studio-footer);
+  border-bottom: 0.5px solid var(--logo-studio-footer);
+  border-right: 0.5px solid var(--logo-studio-footer);
+  border-top: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.project-card {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--body-text-color);
+  letter-spacing: 0.02em;
+  margin: 0px;
+}
 
 
 
@@ -729,4 +729,4 @@ footer {
 
 
 
-
+}

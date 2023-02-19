@@ -108,7 +108,6 @@ display: none;
 
 
 .flex-footer {
-  display: flex;
   flex-direction: column;
 }
 
