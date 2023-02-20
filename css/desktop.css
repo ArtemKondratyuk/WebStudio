@@ -1,8 +1,10 @@
+@media screen and (max-width: 1199px) {
+}
+
+
 @media screen and (min-width: 1200px) {
     .container {
       max-width: 1158px;
-      padding: 0 15px;
-      margin: 0 auto;    
      }
 
    
@@ -282,6 +284,7 @@
 .our-team {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   gap: 24px;
   padding-left: 0;
   } 
@@ -638,7 +641,7 @@ footer {
 }
 
 .footer-social {
-  padding-left: 120px;
+  padding-left: 0px;
 }
 
 .social-media {
@@ -901,6 +904,10 @@ footer {
   letter-spacing: 0.02em;
   margin: 0px;
 }
+
+
+
+
 
 
 }

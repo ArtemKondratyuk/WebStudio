@@ -1,10 +1,10 @@
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 448px;  
+    max-width: 428px; 
+    margin: 0 auto;
     padding-left: 16px;
-    margin: 0;
-
-     }
+    padding-right: 16px; 
+    }
 
  /* header  navigation*/
 
@@ -72,7 +72,7 @@ display: none;
 
 
 .our-team {
-  padding-left: 83.83px;
+  padding-left: 0px;
 }
 
 /* customers */
@@ -106,8 +106,8 @@ display: none;
 }
 
 .footer-logo-text {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .footer-web {
@@ -121,7 +121,7 @@ padding-left: 75.12px;
 }
 
 .footer-social {
-  padding-left: 110px;
+  padding-left: 0px;
 }
 
 .social-media {
@@ -148,7 +148,7 @@ padding-left: 161px;
 
 
 .subscribe {
-margin-top: 16px;
+margin-top: 0px;
 margin-left: 131px;
 margin-right: 132px;
 }
@@ -219,5 +219,19 @@ justify-content: center;
   background: var(--body-bg-color);
   box-shadow: 0px 1px 6px var(--personal-color);
 }
+
+/* Mobile-menu */
+
+.mob-menu-phone-number {
+  font-size: 36px;
+}
+
+.mob-menu-social-list {
+  display: flex;
+  gap: 56px;
+  max-width: 328px;
+}
+
+
 
 }
