@@ -881,13 +881,6 @@ footer {
   padding: 12px 24px;
 }
 
-.content-menu {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
-}
-
 .content-portfolio {
   width: 356px;
   background: var(--body-bg-color);
