@@ -175,7 +175,7 @@
 .notebook-background,
 .astronaut-background
  {
-   background: block;
+   display: none;
 }
 
 .anten, 
@@ -440,8 +440,8 @@ footer {
   padding-bottom: 100px;
 }
 
-.flex-footer {
-  
+.wrap-footer {
+display: flex;
 }
 
 .footer-web {
@@ -609,9 +609,16 @@ footer {
 	margin-left: 16px;
  }   
 
+ /* modal window */
+
+ .modal {
+   width: 408px; 
+   padding-left: 23px; 
+}
+
 /* page portfolio */
 
-/*.section-portfolio {
+.section-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -659,10 +666,11 @@ footer {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
+  align-items: baseline;
 }
 
 .content-portfolio {
-  width: 360px;
+  width: 356px;
   background: var(--body-bg-color);
   box-shadow: 0px 1px 6px var(--personal-color);
 }
@@ -721,8 +729,6 @@ footer {
   letter-spacing: 0.02em;
   margin: 0px;
 }
-
-
 
 
 
