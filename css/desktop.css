@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px) {
     .container {
-      max-width: 1128px;
+      max-width: 1158px;
      }
 
    
@@ -97,9 +97,18 @@
 
 /* hero */
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
 .hero {
   background-image: var(--background-hiro),
-  url(../images/people-office.jpg);
+    url(../images/desktop-hiro2x.jpg);
+}
+}
+
+.hero {
+  background-image: var(--background-hiro),
+  url(../images/desktop-hiro.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

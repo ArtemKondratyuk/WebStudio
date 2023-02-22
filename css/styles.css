@@ -136,6 +136,15 @@ img {
 
 /* hero */
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--background-hiro),
+    url(../images/mobile-hiro2x.jpg);
+      
+  }
+}
 
 .hero {
   background-image: var(--background-hiro),
@@ -196,6 +205,12 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+@media screen and (min-width:320){
+  .modal {
+    width: 280px;
+  } 
 }
 
 .modal {
@@ -687,11 +702,6 @@ footer {
   padding: 100px 0;
 }
 
-.footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .flex-footer {
   display: flex;
   flex-direction: column;
@@ -1040,21 +1050,21 @@ footer {
   margin-bottom: 40px;
 }
 
-.moble-link-menu {
+.mobile-menu-link {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--cubic-bezier);
 }
 
-.menu-mobile-link-contact {
+.mobile-link-contact-menu {
   color: var(--primary-brand);
 }
 
-.mob-menu-phone-number {
+.mobile-menu-number {
   font-weight: 600;
   font-size: 30px;
   line-height: 1.11;
@@ -1062,7 +1072,7 @@ footer {
   color: var(--primary-color);
 }
 
-.mob-menu-mail {
+.mobile-menu-mail {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -1074,6 +1084,7 @@ footer {
   display: flex;
   gap: 46px;
   max-width: 328px;
+  padding-top: 40px;
 }
 
 .mob-menu-social-link {

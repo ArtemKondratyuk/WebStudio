@@ -23,14 +23,14 @@
 (min-resolution: 2dppx) {
 .hero {
   background-image: var(--background-hiro),
-    url(../images/tablet-hiro.jpg);
+    url(../images/tablet-hiro2.jpg);
 }
 }
 
 
 .hero {
 background-image: var(--background-hiro),
-url(../images/mobile-hiro.jpg);
+url(../images/tablet-hiro.jpg);
 }
 
 
