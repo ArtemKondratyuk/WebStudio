@@ -699,7 +699,7 @@ display: none;
 
 footer {
   background: var(--text-color);
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 .flex-footer {
@@ -919,6 +919,11 @@ footer {
   letter-spacing: 0.04em;
   padding: 12px 24px;
 }
+
+.content-menu {
+  justify-content: center;
+   column-gap: 24px;
+  }
 
 .content-portfolio {
   width: 356px;

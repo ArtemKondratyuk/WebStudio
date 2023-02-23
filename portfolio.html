@@ -45,6 +45,87 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-mobile-open" data-menu-open>
+          <svg class="menu-mobile-icon-open" width="32" height="22">
+            <use href="images/icons.svg#icon-charm_menu-hamburger"></use>           
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="container">
+          <div>
+            <button type="button" class="menu-mobile-close" data-menu-close>
+              <svg class="menu-mobile-icon-close" width="8" height="8">
+                <use href="images/icons.svg#icon-x"></use> 
+              </svg>
+            </button>
+            <nav>
+              <ul class="mobile-list-menu">
+                <li class="mobile-item-menu">
+                  <a
+                    class="mobile-menu-link link nav-link-studio"
+                    href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mobile-item-menu">
+                  <a class="mobile-menu-link link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mobile-item-menu">
+                  <a class="mobile-menu-link mobile-link-contact-menu link" href=""
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+           <ul class="mobile-link-contact-menu">
+                <li class="mobile-item-menu">
+                  <a class="mobile-menu-number link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11
+                  </a>
+                </li>
+                <li class="mobile-item-menu">
+                  <a class="mobile-menu-mail link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="mob-menu-social-list list">
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-social-link">
+                  <svg class="mob-menu-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-social-link">
+                  <svg class="mob-menu-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-social-link">
+                  <svg class="mob-menu-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-social-link">
+                  <svg class="mob-menu-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>          
+      </div>
       </div>
     </header>
     <main>
@@ -306,5 +387,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

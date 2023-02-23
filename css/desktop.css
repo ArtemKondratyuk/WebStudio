@@ -647,6 +647,7 @@ footer {
   color: var(--footer-text-color);
   letter-spacing: 0.02em;
   margin-top: 16px;
+  padding-bottom: 0;
 }
 
 .footer-social {
@@ -666,6 +667,7 @@ footer {
 .social-menu-footer {
   display: flex;
   gap: 16px;
+  margin-bottom: 0;
 }
 
 .social-icons-footer {
