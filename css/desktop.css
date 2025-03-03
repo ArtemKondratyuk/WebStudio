@@ -177,6 +177,10 @@
   align-items: center;
 }
 
+.anten-background:hover {
+background-color: var(--logo-studio-fhover);
+}
+
 .anten,
 .clock,
 .notebook,
@@ -185,17 +189,17 @@
 }
 
 .anten {
-   width: 64px;
+  width: 64px;
   height: 64px;
 }
 
 .clock-background {
-  background-color: var(--logo-studio-footer);
-  border-radius: 4px;
-  margin-bottom: 8px;
+  display: flex;
   width: 264px;
   height: 112px;
-  display: flex;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background-color: var(--logo-studio-footer);
   justify-content: center;
   align-items: center;
 }

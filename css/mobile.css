@@ -225,15 +225,21 @@ justify-content: center;
 
 /* Mobile-menu */
 
-.mob-menu-phone-number {
-  font-size: 36px;
+.mobile-menu-number {
+  font-size: 15px;
 }
 
 .mob-menu-social-list {
   display: flex;
-  gap: 56px;
+  margin: 0 auto;
+  gap: 25px;
   max-width: 328px;
-}
+  justify-content: center;
+  }
+
+  .mobile-menu-link {
+    font-size: 25px;
+  }
 
 
 
